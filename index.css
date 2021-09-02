@@ -15,10 +15,14 @@ body{
     position: relative;
 }
 
+img{
+    width: 100%;
+    height:100%;
+}
 .cover{
     position: absolute;
     float: right;
-    width: 46%;
+    width: 49%;
     height:100%;
     background: url('images\\cover.jpg');
     background-repeat: no-repeat;
@@ -70,7 +74,7 @@ body{
     background: black;
     position: absolute;
     float: right;
-    width: 50%;
+    width: 49.5%;
     height:100%;
     transform: rotateX(10deg);
     z-index:5;
@@ -87,33 +91,41 @@ body{
     display: block;
 }
 
-.page:hover, .cover:hover{
-    transform: rotateX(10deg) rotateY(180deg);
+.pages:hover .cover{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index:0;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
 }
 
-.cover:hover{
+/*.cover:hover .page-1{
+    transform: rotateX(10deg) rotateY(180deg);
     z-index:10;
     transition-duration: 2s;
     transition-delay: 1s;
-}
+}*/
 
-.page-1:hover{
+.pages:hover .page.page-1:hover{
+    transform: rotateX(10deg) rotateY(180deg);
     z-index:1;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+}
+.pages:hover .page.page-2:hover{
+    transform: rotateX(10deg) rotateY(180deg);
+    z-index: 2;
     transition-duration: 2s;
     transition-delay: 2s;
 }
-.page-2:hover{
-    z-index: 2;
+.pages:hover .page.page-3:hover{
+    transform: rotateX(10deg) rotateY(180deg);
+    z-index: 3;
     transition-duration: 2s;
-    transition-delay: 3s;
-}
-.page-3{
-    z-index:3;
-    transition-duration: 2s;
-    transition-delay: 4s;
+    transition-delay: 2s;
 }
 
 .page{
     box-shadow: 1px black;
     border: 1px solid gray;
 }
+
