@@ -91,8 +91,8 @@ img{
 }
 
 .pages:hover .cover{
-    -webkit-transform: rotateX(10deg) rotateY(-180deg);
-    transform: rotateX(10deg) rotateY(-180deg);
+    -webkit-transform: rotateX(10deg) rotateY(180deg);
+    transform: rotateX(10deg) rotateY(180deg);
     z-index:0;
     transition-duration: 2s;
     -webkit-transition-duration: 2s;
@@ -103,42 +103,44 @@ img{
 
 
 .pages:hover .page.page-1{
-    -webkit-transform: rotateX(10deg) rotateY(-180deg);
+    -webkit-transform: rotateX(10deg) rotateY(180deg);
     transform: rotateX(10deg) rotateY(180deg);
     z-index:1;
     transition-duration: 2s;
     -webkit-transition-duration: 2s;
     transition-delay: 2s;
     -webkit-transition-delay: 2s;
-    width:48%;
 }
 .pages:hover .page.page-2{
-    -webkit-transform: rotateX(10deg) rotateY(-180deg);
+    -webkit-transform: rotateX(10deg) rotateY(180deg);
     transform: rotateX(10deg) rotateY(180deg);
     z-index: 2;
     -webkit-transition-duration: 2s;
     transition-duration: 2s;
     -webkit-transition-delay: 4s;
     transition-delay: 4s;
-    width: 47.5%;
 }
 .pages:hover .page.page-3{
-    -webkit-transform: rotateX(10deg) rotateY(-180deg);
+    -webkit-transform: rotateX(10deg) rotateY(180deg);
     transform: rotateX(10deg) rotateY(180deg);
     z-index: 3;
     -webkit-transition-duration: 2s;
     transition-duration: 2s;
     -webkit-transition-delay:6s;
     transition-delay: 6s;
-    width: 47%;
 }
 
 .page{
-    box-shadow: 1px black;
     border: 1px solid gray;
     -webkit-transform: rotateX(10deg);
     -webkit-transform-origin: center left;
     transform: rotateX(10deg);
     transform-origin:center left;
+    transition:  1s ease-out;
+    -webkit-transition:  1s ease-out ;
 }
 
+.cover{
+    transition:  3s ease-out;
+    -webkit-transition:  3s ease-out ;
+}
