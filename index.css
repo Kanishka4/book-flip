@@ -141,6 +141,6 @@ img{
 }
 
 .cover{
-    transition:  3s ease-out;
-    -webkit-transition:  3s ease-out ;
+    transition:  1s ease-out;
+    -webkit-transition:  1s ease-out ;
 }
