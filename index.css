@@ -47,8 +47,8 @@ img{
 
 .cover_back{
     z-index:9;
-    -webkit-transform: rotateX(10deg) ;
-    transform: rotateX(10deg) ;
+    -webkit-transform: rotateX(0deg) rotateY(180deg) ;
+    transform: rotateX(0deg) rotateY(180deg) ;
     transform-origin: center right;
     -webkit-transform-origin: center right;
     border-bottom-right-radius: 10px;
@@ -63,10 +63,8 @@ img{
     width:100%;
     height:100%;
     top:0;
-    right:100%;
+    right:0;
     border:1px solid black;
-    -webkit-transform: rotateX(10deg) ;
-    transform: rotateX(10deg) ;
 }
 .page-1{
     position: absolute;
